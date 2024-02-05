@@ -1,0 +1,37 @@
+/* src/app/my-form/my-form.component.css */
+/* src/app/my-form/my-form.component.css */
+.curved-label {
+    border-radius: 5px;
+    background-color: #db7c34;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .form-group.row {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form controls */
+  .form-control {
+    border-radius: 5px;
+  }
+  
+  /* Style the radio buttons */
+  .form-check-input {
+    margin-top: 3px;
+  }
+  
+  /* Style the submit button */
+  .btn-primary {
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #27ae60;
+  }
+  
+  

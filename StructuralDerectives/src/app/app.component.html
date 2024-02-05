@@ -1,0 +1,55 @@
+<h1>Demonstration of Structural Directives</h1>
+<h1>Demonstration of ngIf</h1>
+<h2 *ngIf = "nonveg">You Select Non Veg Menu</h2>
+
+
+<div *ngIf = "nonveg ; then ifblock; else elseblock">You Select Non Veg Menu></div>
+
+<ng-template #ifblock>
+
+  <h2>Please Consider below nonveg Menu Option</h2>
+  <h3>Chicken Tikka</h3>
+  <h3>Butter Chicken</h3>
+  <h3>Chicken Biryani</h3>
+</ng-template>
+<ng-template #elseblock>
+
+  <h2>Please Consider below Veg Menu Option</h2>
+  <h3>Dal Makhani</h3>
+  <h3>Dal Tadaka</h3>
+  <h3>Veg Biryani</h3>
+</ng-template>
+
+
+<h1>Demonstration of ngFor</h1>
+
+<h2>{{Technology[0]}}</h2>
+<h2>{{Technology[1]}}</h2>
+<h2>{{Technology[2]}}</h2>
+<h2>{{Technology[3]}}</h2>
+<h2>{{Technology[4]}}</h2>
+<h2>By using For from Angular like a for each format Technology madhil conent copy in values let is variable datatype</h2>
+<div *ngFor= "let values of Technology">
+<h2>{{values}}</h2>
+</div>
+
+<h1>Demonstration of ngSwitch</h1>
+
+<div [ngSwitch]="Batch">
+  <div *ngSwitchCase="'PPA'">
+    <h2>You Select PPA Batch</h2>
+  </div>
+
+  <div *ngSwitchCase="'LB'">
+    <h2>You Select LB Batch</h2>
+  </div>
+
+  <div *ngSwitchCase="'Python'">
+    <h2>You Select Python  Batch</h2>
+  </div>
+
+  <div *ngSwitchDefault>
+    <h2>You Select Wrong Option</h2>
+  </div>
+</div>
+<router-outlet></router-outlet>

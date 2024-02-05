@@ -1,0 +1,125 @@
+<!-- src/app/my-form/my-form.component.html -->
+<form class="container mt-5">
+  <div class="form-group row">
+    <label for="firstName" class="col-sm-2 col-form-label curved-label">First Name:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter first name" required>
+    </div>
+
+    <label for="middleName" class="col-sm-2 col-form-label curved-label">Middle Name:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="middleName" name="middleName" placeholder="Enter middle name">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="lastName" class="col-sm-2 col-form-label curved-label">Last Name:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter last name" required>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="phoneNumber" class="col-sm-2 col-form-label curved-label">Phone Number:</label>
+    <div class="col-sm-4">
+      <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" required>
+    </div>
+
+    <label for="email" class="col-sm-2 col-form-label curved-label">Email:</label>
+    <div class="col-sm-4">
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="education" class="col-sm-2 col-form-label curved-label">Education:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="education" name="education" placeholder="Enter education Eg.BCA,MCA,MCS" required>
+    </div>
+
+    <label for="college" class="col-sm-2 col-form-label curved-label">College:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="college" name="college" placeholder="Enter college" required>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="motherProfession" class="col-sm-2 col-form-label curved-label">Mother's Profession:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="motherProfession" name="motherProfession" placeholder="Enter mother's profession" required>
+    </div>
+
+    <label for="fatherProfession" class="col-sm-2 col-form-label curved-label">Father's Profession:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="fatherProfession" name="fatherProfession" placeholder="Enter father's profession" required>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="parentsPhoneNumber" class="col-sm-2 col-form-label curved-label">Parents' Phone Number:</label>
+    <div class="col-sm-4">
+      <input type="tel" class="form-control" id="parentsPhoneNumber" name="parentsPhoneNumber" placeholder="Enter parents' phone number" required>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="currentAddress" class="col-sm-2 col-form-label curved-label">Current Address:</label>
+    <div class="col-sm-4">
+      <textarea class="form-control" id="currentAddress" name="currentAddress" rows="3" placeholder="Enter current address" required></textarea>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="permanentAddress" class="col-sm-2 col-form-label curved-label">Permanent Address:</label>
+    <div class="col-sm-4">
+      <textarea class="form-control" id="permanentAddress" name="permanentAddress" rows="3" placeholder="Enter permanent address" required></textarea>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="batch" class="col-sm-2 col-form-label curved-label">Batch:</label>
+    <div class="col-sm-4">
+      <select class="form-control" id="batch" name="batch" required>
+        <option value="Pre-Placement Activity">Pre-Placement Activity</option>
+        <option value="Logic Building">Logic Building</option>
+        <option value="Angular With MEAN stack">Angular With MEAN stack</option>
+        <option value="Python Machine Learning">Python Machine Learning</option>
+      </select>
+    </div>
+  </div>
+
+
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label curved-label">Payment Mode:</label>
+    <div class="col-sm-4">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="onlinePayment" name="paymentMode" value="online" required>
+        <label class="form-check-label" for="onlinePayment">Online</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="offlinePayment" name="paymentMode" value="offline" required>
+        <label class="form-check-label" for="offlinePayment">Offline</label>
+      </div>
+    </div>
+    <p>Note: WhatsApp or Call Admin at 7020713938 for Bank Details.<strong>Only pay FEES after calling and informing to admin!</strong></p>
+  </div>
+
+ 
+  <!-- Add this inside your form -->
+<div class="form-group row">
+  <div class="col-sm-4 offset-sm-2">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="agreeTerms" name="agreeTerms" required>
+      <label class="form-check-label" for="agreeTerms">I agree with the terms and conditions</label>
+    </div>
+  </div>
+  
+</div>
+<div class="form-group row">
+  <div class="col-sm-10 offset-sm-2">
+    <button (click) = "Display()" type="submit" class="btn btn-primary">Submit</button>
+    {{str}}
+  </div>
+</div>
+</form>
